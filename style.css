@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,13 +13,17 @@ body {
   padding: 0px;
   background-image: url("https://farm5.staticflickr.com/4644/39423946212_eb9b1d6967_o.jpg");
   background-color: #cccccc;
-  height: 900px;
+  height: 925px;
   width: auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: sticky;
   z-index: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 div.intro-text {
