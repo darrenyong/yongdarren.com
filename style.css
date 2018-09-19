@@ -7,20 +7,21 @@ body {
   padding: 0px;
 }
 
-.intro-image {
+#intro-image {
   margin: 0px;
   padding: 0px;
   background-image: url("https://farm5.staticflickr.com/4644/39423946212_eb9b1d6967_o.jpg");
   background-color: #cccccc;
-  height: 1000px;
+  height: 900px;
   width: auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: sticky;
+  z-index: 0;
 }
 
-.intro-text {
+div.intro-text {
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -31,7 +32,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-h1 {
+h1.intro-text {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0em;
@@ -46,7 +47,7 @@ h1 {
   opacity: 0.05;
 }
 
-h3 {
+h3.intro-subtext {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -56,9 +57,75 @@ h3 {
   letter-spacing: -2px;
 }
 
-nav li {
+/* div.about-me {
+  background-color: red;
+  width: 50%;
+  height: 200px;
+  padding:20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+} */
+
+#about-me-title {
+  background-color: LightSkyBlue;
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+h2.about-me-title {
+  font-family: "Trebuchet MS";
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#about-me-body {
+  font-family: "Calibri Light";
+  background-color: LightSlateGray;
+  width 50%;
+  height: 200px;
+}
+
+#experience-title {
+  background-color: IndianRed;
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+h2.experience-title {
+  font-family: "Trebuchet MS";
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#experience-body{
+  background-color: Gray;
+  height: 200px;
+}
+
+ol.tinyco {
   list-style-type: none;
-  display: inline-block;
+  text-align: justify;
+}
+
+ol.tcm {
+  list-style-type: none;
+  text-align: justify;
+}
+
+#passion-title {
+  text-align: center;
 }
 
 div.footer-text {
@@ -71,12 +138,12 @@ ul.footer-images {
   padding-top: 20px;
   padding-left: 0px;
   padding-bottom: 100px;
+  list-style-type: none;
   text-align: center;
 }
 
 li.footer-images {
   padding-left: 10px;
   padding-right: 10px;
-  list-style-type: none;
   display: inline-block;
 }
