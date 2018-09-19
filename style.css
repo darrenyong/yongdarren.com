@@ -11,8 +11,7 @@ body {
 #intro-image {
   margin: 0px;
   padding: 0px;
-  background-image: url("https://farm5.staticflickr.com/4644/39423946212_eb9b1d6967_o.jpg");
-  background-color: #cccccc;
+  background-image: url("./Assets/intro-image.jpg");
   height: 925px;
   width: auto;
   background-position: 50% 50%;
