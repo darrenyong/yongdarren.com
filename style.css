@@ -50,18 +50,17 @@
 } */
 
 .flickr-images {
-  display: inline;
+  display: inline-block;
 }
 
-.flickr-images div img {
+.flickr-images img {
   -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-  float: left;
-  padding: 10px;
+  padding: 0px 0px 10px 5px;
 }
-.flickr-images div:hover img {
+.flickr-images img:hover  {
   -webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
