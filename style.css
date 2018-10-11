@@ -1,8 +1,10 @@
+/* Remove all default margin/padding */
 * {
   margin: 0px;
   padding: 0px;
 }
 
+/* Intro Section CSS */
 #intro-image {
   background-image: url("./Assets/intro-banner.jpg");
   height: 800px;
@@ -38,17 +40,20 @@
   letter-spacing: -2px;
 }
 
-/* div.about-me {
-  background-color: red;
-  width: 50%;
-  height: 200px;
-  padding:20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-} */
+.line-break-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
+
+/* About Me Section CSS */
+.about-image {
+  width: auto;
+  height: 400px;
+}
+
+
+/* Photography Passion Section CSS */
 .flickr-images {
   display: inline-block;
 }
@@ -65,6 +70,8 @@
 	filter: grayscale(0);
 }
 
+
+/* Social Media/Contact Section CSS */
 .social-media {
   padding: 20px 0px 30px 0px;
   background-color: #f0f5f5;
@@ -85,7 +92,7 @@ ul.footer-images {
   display: inline-block;
 }
 
-.line-break {
+.background-gray {
   background-color: #f0f5f5;
 }
 
@@ -97,6 +104,8 @@ hr {
   text-align: center;
 }
 
+
+/* Copyright Section CSS */
 .copyright {
   background-color: #f0f5f5;
   padding: 20px 0px;
