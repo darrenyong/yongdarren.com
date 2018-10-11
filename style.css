@@ -40,16 +40,15 @@
   letter-spacing: -2px;
 }
 
-.line-break-padding {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-
 /* About Me Section CSS */
 .about-image {
-  width: auto;
-  height: 400px;
+  background-image: url("./Assets/IMG_0308.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  align: center;
+  padding: 0px;
+  height: 500px;
 }
 
 
@@ -96,18 +95,25 @@ ul.footer-images {
   background-color: #f0f5f5;
 }
 
-hr {
-  height: 1px;
-  width: 300px;
-  border-top: 5px solid #ccc;
-  margin: 0px auto;
-  text-align: center;
-}
-
 
 /* Copyright Section CSS */
 .copyright {
   background-color: #f0f5f5;
   padding: 20px 0px;
   font-size: 10px;
+}
+
+
+/* Miscellaneous CSS */
+.line-break-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+hr {
+  height: 1px;
+  width: 300px;
+  border-top: 5px solid #ccc;
+  margin: 0px auto;
+  text-align: center;
 }
