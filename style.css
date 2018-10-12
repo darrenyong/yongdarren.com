@@ -41,6 +41,10 @@
 }
 
 /* About Me Section CSS */
+.about-title {
+  padding-bottom: 10px;
+}
+
 .about-image {
   background-image: url("./Assets/IMG_0308.jpg");
   background-repeat: no-repeat;
@@ -71,6 +75,7 @@
 #flickr-images:hover  {
   -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+  cursor: pointer;
 }
 
 
@@ -137,7 +142,7 @@ ul.footer-images {
 }
 
 .footer-images li {
-  padding: 0px 10px;
+  padding: 10px 10px 0px 10px;
   display: inline-block;
 }
 
