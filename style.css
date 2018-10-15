@@ -5,6 +5,22 @@
 }
 
 /* Intro Section CSS */
+.navigation-bar {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  position: absolute;
+  top: 5%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+  display: inline; 
+}
+
+.navigation-list {
+  list-style-type: none;
+  display: inline;
+}
+
 #intro-image {
   background-image: url("./Assets/intro-banner.jpg");
   height: 800px;
