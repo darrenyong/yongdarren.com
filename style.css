@@ -6,19 +6,27 @@
 
 /* Intro Section CSS */
 .navigation-bar {
-  margin: 0px;
-  padding: 0px;
-  color: white;
   position: absolute;
-  top: 5%;
-  left: 97%;
+  top: 9%;
+  left: 85%;
   transform: translate(-50%, -50%);
-  display: inline; 
 }
 
-.navigation-list {
+.navigation-list li {
   list-style-type: none;
   display: inline;
+  padding: 5px;
+}
+
+.navigation-list a {
+  color: white;
+}
+
+.navigation-list:hover,
+.navigation-list:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #intro-image {
