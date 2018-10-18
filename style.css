@@ -4,6 +4,7 @@
   padding: 0px;
 }
 
+
 /* Intro Section CSS */
 .navigation-bar {
   position: absolute;
@@ -69,6 +70,7 @@
   font-weight: 500;
   letter-spacing: -2px;
 }
+
 
 /* About Me Section CSS */
 .about-title {
