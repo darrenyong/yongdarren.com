@@ -23,3 +23,10 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// Allows user to close modal using the ESC button
+$(document).keydown(function(event) {
+  if (event.keyCode == 27) {
+    $('#myModal').hide();
+  }
+});
