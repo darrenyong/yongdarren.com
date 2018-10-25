@@ -31,12 +31,10 @@
 }
 
 #intro-image {
-  background-image: url("./Assets/intro-banner.jpg");
+  background: url("./Assets/intro-banner.jpg") no-repeat fixed;
   height: 800px;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .intro-text {
