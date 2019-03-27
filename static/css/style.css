@@ -256,10 +256,6 @@ img {
   height: 100vh;
 } 
 
-.home-banner h1 {
-  font-weight: 700;
-  font-size: 85px;
-}
 .home-banner h3 {
   font-weight: 300;
 }
@@ -274,6 +270,17 @@ img {
   -o-transform: translatey(-50%);
   transform: translatey(-50%);
   color: #fff;
+}
+
+.home-hello {
+  opacity: 0.5;
+  font-size: 150px;
+  font-weight: 600
+}
+
+.home-intro {
+  font-weight: 700;
+  font-size: 85px;
 }
 
 .particles-box .particles-js-canvas-el {
