@@ -49,9 +49,9 @@
 	        speed: 200,
 	        loop:true,
 	        strings: [
-	          'Developer',
-						'Photographer',
-						''
+	          'Developer.',
+						'Photographer.',
+						'Gamer.'
 	        ],
 	        breakLines: false
     	});	
@@ -71,7 +71,7 @@
 	    else {
 	       $('header').removeClass('fixed-header');
 				 $('body').removeClass('fixed-header-body');
-				$('footer').removeClass('footer-visible');
+				 $('footer').removeClass('footer-visible');
 	    }
 	}
 	/*--------------------
