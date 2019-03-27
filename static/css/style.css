@@ -262,7 +262,7 @@ img {
 
 .home-text-center {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 15px;
   right: 15px;
   -webkit-transform: translatey(-50%);
@@ -274,8 +274,8 @@ img {
 
 .home-hello {
   opacity: 0.5;
-  font-size: 150px;
-  font-weight: 600
+  font-size: 100px;
+  font-weight: 400
 }
 
 .home-intro {
