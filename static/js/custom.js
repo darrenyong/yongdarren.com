@@ -1,16 +1,16 @@
 /*
-	Template:  Morgan - Personal Portfolio Template
+	Template:  websiteUtil - Personal Portfolio Template
 	Author: mital_04
 	Design and Developed by: mital_04
 */
 (function($){
 	"use strict"
-	var MORGAN = {};
+	var websiteUtil = {};
 	
 	/*--------------------
 		* Skill
 	----------------------*/
-	MORGAN.SkillBar = function() {
+	websiteUtil.SkillBar = function() {
 		$('.skillbar').skillBars({
 				from: 0,
 				speed: 4000, 
@@ -22,11 +22,11 @@
 	/*--------------------
 		* Pre Load
 	----------------------*/
-	MORGAN.WebLoad = function(){
+	websiteUtil.WebLoad = function(){
 		document.getElementById("loading").style.display = "none"; 
 	}
 
-	MORGAN.HeaderScroll = function(){
+	websiteUtil.HeaderScroll = function(){
         $('header a[href*="#"]:not([href="#"])').on('click', function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
               var target = $(this.hash);
@@ -44,7 +44,7 @@
 	/*--------------------
 		* Type It
 	----------------------*/
-	MORGAN.mTypeIt = function(){
+	websiteUtil.mTypeIt = function(){
 		new TypeIt('#type-it', {
 	        speed: 200,
 	        loop:true,
@@ -62,20 +62,22 @@
 	/*--------------------
 		* Header Fixed
 	----------------------*/
-	MORGAN.HeaderFixed = function(){
-		if ($(window).scrollTop() >= 60) {
+	websiteUtil.HeaderFixed = function(){
+		if ($(window).scrollTop() >= 70) {
 	       $('header').addClass('fixed-header');
-	       $('body').addClass('fixed-header-body');
+				 $('body').addClass('fixed-header-body');
+				 $('footer').addClass('footer-visible');
 	    }
 	    else {
 	       $('header').removeClass('fixed-header');
-	       $('body').removeClass('fixed-header-body');
+				 $('body').removeClass('fixed-header-body');
+				$('footer').removeClass('footer-visible');
 	    }
 	}
 	/*--------------------
 		* Header Fixed
 	----------------------*/
-	MORGAN.FullScreen = function(){
+	websiteUtil.FullScreen = function(){
 		$(".full-screen").height($(window).height());	
 	}
 
@@ -83,7 +85,7 @@
 		* Counter JS
 	----------------------*/
 	var a = 0;
-	MORGAN.Counter = function(){
+	websiteUtil.Counter = function(){
 		var oTop = $('.counter-box').offset().top - window.innerHeight;
 		  if (a == 0 && $(window).scrollTop() > oTop) {
 		    $('.count').each(function () {
@@ -104,7 +106,7 @@
 	/*--------------------
 		* owl Slider
 	----------------------*/
-	MORGAN.PortfolioSlider = function(){
+	websiteUtil.PortfolioSlider = function(){
 		var testimonials_slider = $('#portfolio-slider-single');
 	    testimonials_slider.owlCarousel({
 	        loop: true,
@@ -130,7 +132,7 @@
 	    });
 	}
 
-	MORGAN.ClientSlider = function(){
+	websiteUtil.ClientSlider = function(){
 		var testimonials_slider = $('#client-slider-single');
 	    testimonials_slider.owlCarousel({
 	        loop: true,
@@ -141,31 +143,31 @@
 	}
 
 	/*--------------------
-		* MORGAN function
+		* websiteUtil function
 	----------------------*/
 	// Window on Load
 	$(window).on("load", function(){
-		MORGAN.WebLoad();
+		websiteUtil.WebLoad();
 	});
 	// Document on Ready
 	$(document).on("ready", function(){
-		MORGAN.mTypeIt(),
-		MORGAN.HeaderScroll(),
-		MORGAN.SkillBar(),
-		MORGAN.PortfolioSlider(),
-		MORGAN.ClientSlider(),
-		MORGAN.FullScreen();
+		websiteUtil.mTypeIt(),
+		websiteUtil.HeaderScroll(),
+		websiteUtil.SkillBar(),
+		websiteUtil.PortfolioSlider(),
+		websiteUtil.ClientSlider(),
+		websiteUtil.FullScreen();
 	});
 
 	// Document on Scrool
 	$(window).on("scroll", function(){
-		MORGAN.Counter(),
-		MORGAN.HeaderFixed();
+		websiteUtil.Counter(),
+		websiteUtil.HeaderFixed();
 	});
 
 	// Window on Resize
 	$(window).on("resize", function(){
-		MORGAN.FullScreen();
+		websiteUtil.FullScreen();
 	});
 
 
