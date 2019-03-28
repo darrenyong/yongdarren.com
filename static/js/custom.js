@@ -51,7 +51,8 @@
 	        strings: [
 	          'Developer.',
 						'Photographer.',
-						'Gamer.'
+						'Gamer.',
+						'Shiba dad.'
 	        ],
 	        breakLines: false
     	});	
@@ -172,6 +173,11 @@
 		if (event.keyCode == 27) {
 			$('#myModal').hide();
 		}
+	});
+
+	$('.modal-content').click(() => {
+				$("body").removeClass("modal-open");
+				modal.style.display = "none";
 	});
 
 
