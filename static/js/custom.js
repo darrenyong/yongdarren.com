@@ -5,7 +5,7 @@
 */
 (function($){
 	"use strict"
-	var websiteUtil = {};
+	let websiteUtil = {};
 	
 	/*--------------------
 		* Skill
@@ -29,7 +29,7 @@
 	websiteUtil.HeaderScroll = function(){
         $('header a[href*="#"]:not([href="#"])').on('click', function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-              var target = $(this.hash);
+              let target = $(this.hash);
                   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                   if (target.length) {
                     $('html,body').animate({
@@ -84,9 +84,9 @@
 	/*--------------------
 		* Counter JS
 	----------------------*/
-	var a = 0;
+	let a = 0;
 	websiteUtil.Counter = function(){
-		var oTop = $('.counter-box').offset().top - window.innerHeight;
+		let oTop = $('.counter-box').offset().top - window.innerHeight;
 		  if (a == 0 && $(window).scrollTop() > oTop) {
 		    $('.count').each(function () {
 		          $(this).prop('Counter',0).animate({
@@ -107,7 +107,7 @@
 		* owl Slider
 	----------------------*/
 	websiteUtil.PortfolioSlider = function(){
-		var testimonials_slider = $('#portfolio-slider-single');
+		let testimonials_slider = $('#portfolio-slider-single');
 	    testimonials_slider.owlCarousel({
 	        loop: true,
 	        margin: 0,
@@ -133,7 +133,7 @@
 	}
 
 	websiteUtil.ClientSlider = function(){
-		var testimonials_slider = $('#client-slider-single');
+		let testimonials_slider = $('#client-slider-single');
 	    testimonials_slider.owlCarousel({
 	        loop: true,
 	        margin: 0,
@@ -146,26 +146,23 @@
 	/*--------------------
 	| * Modal
 	---------------------*/
-	var modal = document.getElementById('myModal');
-	var images = document.getElementsByClassName('myImages');
-	var modalImg = document.getElementById("img01");
+	let modal = document.getElementById('myModal');
+	let images = document.getElementsByClassName('myImages');
+	let modalImg = document.getElementById("img01");
 
-	for (var i = 0; i < images.length; i++) {
-		var img = images[i];
-		img.onclick = function () {
+	for (let i = 0; i < images.length; i++) {
+		let img = images[i];
+		img.onclick = function() {
+			$("body").addClass("modal-open");
 			modal.style.display = "block";
 			modalImg.src = this.src;
 		}
 	}
 
-	// Allows user to close modal using the close button and by clicking outside the picture
-	var span = document.getElementsByClassName("close-button")[0];
-	span.onclick = function () {
-		modal.style.display = "none";
-	}
-
+	// Allows user to close modal by clicking outside the picture
 	window.onclick = function (event) {
 		if (event.target == modal) {
+			$("body").removeClass("modal-open");
 			modal.style.display = "none";
 		}
 	}

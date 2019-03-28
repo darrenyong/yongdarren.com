@@ -40,6 +40,10 @@ body {
   font-size: 16px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .font-alt {
   font-family: 'Rubik', sans-serif;
 }
