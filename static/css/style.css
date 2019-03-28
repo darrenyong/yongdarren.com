@@ -600,17 +600,15 @@ img {
 }
 
 /*-----------------------------------------
-* 11. Testimonial
+* 11. Icons
 -----------------------------------------*/
-.testimonial-col .img {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  display: inline-block;
-  border-radius: 50%;
+.skill-icons {
+  font-size: 100px;
+  text-align: center;
 }
-.testimonial-section .owl-dots {
-  bottom: -40px;
+
+.skill-icons-redux {
+  margin-bottom: 50px;
 }
 
 /*-----------------------------------------
