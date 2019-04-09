@@ -131,22 +131,23 @@ img {
 * 03. Buttons
 -----------------------------------------*/
 .btn {
-    border: 2px solid transparent;
-    line-height: inherit;
-    border-radius: 0;
-    text-transform: uppercase;
-    width: auto;
-    font-weight: 300;
-    letter-spacing: 1px;
-    font-size: 14px;
-    line-height: 14px;
-    padding:12px 20px 9px 20px;
-    cursor: pointer;
-    -webkit-transition: ease all 0.3s;
-       -moz-transition: ease all 0.3s;
-         -o-transition: ease all 0.3s;
-        -ms-transition: ease all 0.3s;
-            transition: ease all 0.3s;
+  border: 2px solid transparent;
+  line-height: inherit;
+  border-radius: 0;
+  text-transform: uppercase;
+  width: auto;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 14px;
+  padding:12px 20px 9px 20px;
+  cursor: pointer;
+  -webkit-transition: ease all 0.3s;
+      -moz-transition: ease all 0.3s;
+        -o-transition: ease all 0.3s;
+      -ms-transition: ease all 0.3s;
+          transition: ease all 0.3s;
+  background: #000;
 }
 .btn i {
   margin-right: 8px;
